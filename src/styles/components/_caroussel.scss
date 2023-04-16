@@ -1,0 +1,24 @@
+.item {
+  max-height: 500px;
+}
+.carousel-caption {
+  background-color: $carousselBg;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+#carousel {
+  margin: 0 auto;
+  width: 50vw;
+  @media screen and (min-width: 1600px) {
+    width: 35vw;
+  }
+  @media screen and (min-width: $breakPoint) and (max-width: 1599px) {
+    width: 40vw;
+  }
+}
+.carouselLink {
+  text-decoration: none;
+}

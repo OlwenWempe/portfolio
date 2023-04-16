@@ -1,0 +1,31 @@
+#compList {
+  padding: 2vw;
+  background-color: rgba(226, 240, 241, 0.13);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: grid;
+  grid-template-columns: 12vw 12vw 12vw 12vw;
+  grid-template-rows: auto;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $breakPoint) {
+    grid-template-columns: 12vw 12vw 12vw;
+  }
+  @media screen and (min-width: 1600px) {
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+  }
+
+  img {
+    width: 6vw;
+    max-height: 6vw;
+    margin: 3px auto;
+    align-self: center;
+    @media screen and (min-width: 1600px) {
+      width: 5rem;
+    }
+  }
+}

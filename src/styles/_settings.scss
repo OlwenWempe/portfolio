@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "josefine";
+  src: url("../fonts/JosefinSans-Light.ttf");
+}
+
+$font-1: "josefine", sans-serif;
+
+$logoBg: #050a30;
+$carousselBg: rgba(5, 10, 46, 0.753);
+$WBlue: #3df0ff;
+$bracketsBlue: #5ba3f8;
+$bGround: #131317;
+$white: #eee;
+$black: #222;
+
+$minHeight: 180vh;
+$breakPoint: 768px;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(210deg, $bGround 55%, $logoBg 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: $minHeight;
+  font-family: $font-1;
+  color: $bracketsBlue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 1fr 250px;
+  grid-template-areas: "1" "2" "3";
+}
+
+li {
+  list-style-type: none;
+}
+
+.bg-blue {
+  background-color: $bracketsBlue;
+}
